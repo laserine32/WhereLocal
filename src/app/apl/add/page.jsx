@@ -1,7 +1,7 @@
 import FormCreate from "@/components/FormCreate"
 import Wrapper from "@/components/Wrapper"
 
-const page = () => {
+const AddAplPage = () => {
 	return (
 		<>
 			<Wrapper>
@@ -14,4 +14,4 @@ const page = () => {
 	)
 }
 
-export default page
+export default AddAplPage

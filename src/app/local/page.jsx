@@ -1,6 +1,6 @@
 import LocalTable from "@/components/LocalTable"
 import Wrapper from "@/components/Wrapper"
-const page = () => {
+const LocalPage = () => {
 	return (
 		<Wrapper>
 			<div className="p-10 -m-10 bg-black/70">
@@ -13,4 +13,4 @@ const page = () => {
 	)
 }
 
-export default page
+export default LocalPage

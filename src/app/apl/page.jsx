@@ -2,7 +2,7 @@ import AppTable from "@/components/AppTable"
 import { CreateButton } from "@/components/Buttons"
 import Wrapper from "@/components/Wrapper"
 
-const page = () => {
+const AplPage = () => {
 	return (
 		<>
 			<Wrapper>
@@ -18,4 +18,4 @@ const page = () => {
 	)
 }
 
-export default page
+export default AplPage

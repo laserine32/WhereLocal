@@ -4,7 +4,7 @@ import { getAppById } from "@/lib/data"
 import { notFound } from "next/navigation"
 import React from "react"
 
-const page = async ({ params }) => {
+const EditAplPage = async ({ params }) => {
 	const { id } = await params
 	const data = await getAppById(parseInt(id))
 
@@ -24,4 +24,4 @@ const page = async ({ params }) => {
 	)
 }
 
-export default page
+export default EditAplPage
