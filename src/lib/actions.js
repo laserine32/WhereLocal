@@ -28,8 +28,8 @@ export const saveApp = async (prevSate, formData) => {
 	} catch (error) {
 		return { message: "Failed to create apps" }
 	}
-	revalidatePath("/apps")
-	redirect("/apps")
+	revalidatePath("/apl")
+	redirect("/apl")
 }
 
 export const editApp = async (id, prevSate, formData) => {
@@ -53,8 +53,8 @@ export const editApp = async (id, prevSate, formData) => {
 	} catch (error) {
 		return { message: "Failed to update apps" }
 	}
-	revalidatePath("/apps")
-	redirect("/apps")
+	revalidatePath("/apl")
+	redirect("/apl")
 }
 
 export const deleteApp = async (id) => {
@@ -67,5 +67,5 @@ export const deleteApp = async (id) => {
 	} catch (error) {
 		return { message: "Failed to create apps" }
 	}
-	revalidatePath("/apps")
+	revalidatePath("/apl")
 }

@@ -8,7 +8,7 @@ import { deleteApp } from "@/lib/actions"
 export const CreateButton = () => {
 	return (
 		<Link
-			href="/apps/add"
+			href="/apl/add"
 			className="inline-flex items-center space-x-1 text-white bg-blue-700 hover:bg-blue-800 px-5 py-[9px] rounded-sm text-sm"
 		>
 			<IoAddSharp size={20} />
@@ -19,7 +19,7 @@ export const CreateButton = () => {
 
 export const EditButton = ({ id }) => {
 	return (
-		<Link href={`/apps/edit/${id}`} className="rounded-sm border p-1 hover:bg-gray-100">
+		<Link href={`/apl/edit/${id}`} className="rounded-sm border p-1 hover:bg-gray-100">
 			<IoPencil size={20} />
 		</Link>
 	)
