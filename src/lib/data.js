@@ -31,7 +31,7 @@ export const getApps = async () => {
 		const data = await prisma.apps.findMany()
 		return data
 	} catch (error) {
-		throw new Error("Failed to fetch apps data")
+		throw new Error("Failed to fetch apps data : " + error.message)
 	}
 }
 

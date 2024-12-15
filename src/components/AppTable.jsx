@@ -10,6 +10,8 @@ const AppTable = async () => {
 	const wrapSrcImg = (url) =>
 		url == "" ? `http://${local.address}/dashboard/assets/imgs/favicon.png` : wrapUlrLocal(url)
 
+	if (!data) return <h1>Data Empty</h1>
+
 	return (
 		<>
 			<table className="w-full text-sm text-left text-gray-500">
