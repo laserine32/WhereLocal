@@ -6,7 +6,7 @@ import React from "react"
 
 const page = async ({ params }) => {
 	const { id } = await params
-	const data = await getAppById(id)
+	const data = await getAppById(parseInt(id))
 
 	if (!data) {
 		notFound()

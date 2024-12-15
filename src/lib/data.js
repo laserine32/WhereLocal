@@ -38,7 +38,7 @@ export const getApps = async () => {
 export const getAppById = async (id) => {
 	try {
 		const data = await prisma.apps.findFirst({
-			where: { id: parseInt(id) },
+			where: { id },
 		})
 		return data
 	} catch (error) {
