@@ -9,7 +9,7 @@ export const getLocal = async () => {
 		})
 		return data
 	} catch (error) {
-		throw new Error("Failed to fetch apps data")
+		throw new Error("Failed to fetch local data : " + error.message)
 	}
 }
 
@@ -22,7 +22,7 @@ export const getLocals = async () => {
 		})
 		return data
 	} catch (error) {
-		throw new Error("Failed to fetch apps data")
+		throw new Error("Failed to fetch locals data : " + error.message)
 	}
 }
 
@@ -42,6 +42,6 @@ export const getAppById = async (id) => {
 		})
 		return data
 	} catch (error) {
-		throw new Error("Failed to fetch apps data")
+		throw new Error("Failed to fetch app data : " + error.message)
 	}
 }
