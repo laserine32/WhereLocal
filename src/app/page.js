@@ -7,8 +7,6 @@ const Home = async () => {
 	const data = await getApps()
 
 	const wrapUlrLocal = (url) => `http://${local.address}${url}`
-	const wrapSrcImg = (url) =>
-		url == "" ? `http://${local.address}/dashboard/assets/imgs/favicon.png` : wrapUlrLocal(url)
 
 	return (
 		<>
@@ -17,7 +15,6 @@ const Home = async () => {
 				<div className="grid grid-cols-3 sm:grid-cols-5 lg:grid-cols-10 gap-2">
 					{data.map((app, i) => {
 						app.link = wrapUlrLocal(app.link)
-						app.img = wrapSrcImg(app.img)
 						return <AppIcon key={i} app={app} />
 					})}
 				</div>

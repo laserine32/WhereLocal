@@ -7,8 +7,6 @@ const AppTable = async () => {
 	const data = await getApps()
 
 	const wrapUlrLocal = (url) => `http://${local.address}${url}`
-	const wrapSrcImg = (url) =>
-		url == "" ? `http://${local.address}/dashboard/assets/imgs/favicon.png` : wrapUlrLocal(url)
 
 	if (!data) return <h1>Data Empty</h1>
 
@@ -31,7 +29,7 @@ const AppTable = async () => {
 							<td className="py-3 px-6">{app.name}</td>
 							<td className="py-3 px-6">{wrapUlrLocal(app.link)}</td>
 							<td className="py-3 px-6">
-								<Image src={wrapSrcImg(app.img)} width={100} height={100} alt={app.name} />
+								<Image src={app.img} width={100} height={100} alt={app.name} />
 							</td>
 							<td className="flex justify-center gap-1 py-3">
 								<EditButton id={app.id} />
