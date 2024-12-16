@@ -2,6 +2,8 @@ import AppIcon from "@/components/AppIcon"
 import Wrapper from "@/components/Wrapper"
 import { getApps, getLocal } from "@/lib/data"
 
+export const revalidate = 3600
+
 const Home = async () => {
 	const local = await getLocal()
 	const data = await getApps()

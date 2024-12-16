@@ -2,6 +2,8 @@ import { getApps, getLocal } from "@/lib/data"
 import Image from "next/image"
 import { DeleteButton, EditButton } from "./Buttons"
 
+export const revalidate = 3600
+
 const AppTable = async () => {
 	const local = await getLocal()
 	const data = await getApps()

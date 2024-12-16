@@ -28,7 +28,11 @@ export const getLocals = async () => {
 
 export const getApps = async () => {
 	try {
-		const data = await prisma.apps.findMany()
+		const data = await prisma.apps.findMany({
+			orderBy: {
+				id: "asc",
+			},
+		})
 		return data
 	} catch (error) {
 		throw new Error("Failed to fetch apps data : " + error.message)
