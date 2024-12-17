@@ -1,8 +1,6 @@
 import { getLocals } from "@/lib/data"
 import { formatDate } from "@/lib/utils"
 
-export const revalidate = 3600
-
 const LocalTable = async () => {
 	const locals = await getLocals()
 	return (
